@@ -1,0 +1,56 @@
+  <!DOCTYPE html>
+
+  <html lang="en">
+
+  <!--link to the CSS code -->
+  <link rel="stylesheet" href="RPS.css">
+
+
+
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>The Game</title>
+    </head>
+    <body>
+      <header>
+        <h1>Rock Paper Scissors</h1>
+      </header>
+
+<!--Creating the scoreboard-->
+      <div class="score-board">
+        <!--You want the user and comp to have the same class so that they look similar, however, they will have unique IDs to create some distinction-->
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <!--Inline spans to keep score, notice the ":" after the user span line so that it seperates the two-->
+        <span id="user-score">0</span> : <span id="computer-score">0</span>
+      </div>
+
+      <!--Result Message-->
+      <div class="result">
+        <p>Paper covers Rock. You win!</p>
+      </div>
+
+      <!--Images of the Rock, paper, scissors graphics
+        choices are all available choices
+        An inner div to get the individual choices 
+          The images exist within the same directory as this .html file-->
+      <div class = "choices">
+        <div class ="choice" id="rock">
+          <img src="rock.jpg" alt="rock">
+        </div>
+      <div class ="choice" id="paper">
+          <img src="paper.jpg" alt=paper">
+         </div>
+      <div class ="choice" id="scissors">
+          <img src="scissors.jpg" alt="scissors"> 
+        </div>
+      </div>
+
+    
+    <p id="make-your-move">Make your move. </p> 
+
+   <!--link to the JS code-->
+   <script src="app.js" charset="utf-8"></script>
+    </body>
+  </html>
