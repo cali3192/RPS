@@ -1,0 +1,132 @@
+/* Universal Style */
+
+/*Importing a font
+Google the desired font, Google Fonts has several already made
+*/
+@import url('https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: white;
+  padding: 20px;
+}
+
+body {
+  background-color: #292C34;
+}
+
+h1 {
+  color: #25272E;
+  text-align: center;
+  font-family: Asap, sans-sarif;
+}
+
+.score-board {
+  border: 3px solid white;
+  border-radius: 4px;
+  width: 200px;
+  padding: 15px 20px;
+  /*centers the text*/
+  margin: 20px auto;
+  color: white;
+  font-size: 46px;
+  text-align: center;
+  font-family: Asap, sans-sarif;
+/*This will allow user-label and computer label to position itself relative to the scoreboard, its parent*/
+  position: relative;
+}
+
+.badge {
+  background: #292C34;
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+  font-family: Asap, sans-sarif;
+}
+
+
+#user-label {
+  /*this is relateive to the scoreboard parent positioning*/
+  position: absolute;
+  background:red;
+  top: 30px;
+  /*this will position it to the left of the  scorboard*/
+  left: -25px;
+}
+
+#computer-label {
+  /*this is relateive to the scoreboard parent positioning*/
+  position: absolute;
+  background:red;
+  top: 30px;
+  /*this will position it to the left of the  scorboard*/
+  right: -30px;
+}
+
+.result {
+  font-size: 40px;
+  color: white;
+}
+
+.result > p {
+  text-align:center;
+  font-family: Asap, sans-serif;
+  font-weight: bold;
+}
+
+
+/*it will allow the children to be lined up relative to this startig point*/
+.choices {
+  text-align: center;
+  margin: 50px 0;
+}
+.choice {
+  display: inline-block;
+  border: 4px solid white;
+  /*to get a circle, half of the image pixel size*/
+  border-radius: 50%;
+  padding: 10px;
+  /*the defualt margin will add margins to the top and bottom*/
+  margin-top: 0px 20px;
+  /*transitions the background color when the cursor is over*/
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: red;
+  /*the transision to red is made less harsh using the transision tag in the choices class*/
+}
+
+#make-your-move {
+  text-align: center;
+  color: white;
+  font-family: Asap, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+/*An add on from the .js code*/
+.green-glow {
+  border: 4px solid #4DCC7D;
+  box-shadow: 0 0 10px #31B43A;
+}
+
+
+.red-glow {
+  border: 4px solid #f2c12b;
+  box-shadow: 0 0 10px #d01115;
+}
+
+
+.gray-glow {
+  border: 4px solid #464647;
+  box-shadow: 0 0 10px #25292b;
+}
